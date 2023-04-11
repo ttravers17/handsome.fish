@@ -20,4 +20,4 @@ jobs:
 
     - name: Copy files to server
       run: |
-        scp -o StrictHostKeyChecking=no -r ./path/to/your/static/assets "${{ secrets.SERVER_USER_IP }}:/path/to/your/server/assets"
+        scp -o StrictHostKeyChecking=no -r ./static "${{ secrets.SERVER_USER_IP }}:/var/www/handsome.fish"
